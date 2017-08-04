@@ -1,0 +1,663 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>3. Action与路由 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../advanced/readme.md" />
+    
+    
+    <link rel="prev" href="2-service.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    [起步教程]
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="1-hello-world.html">
+            
+                <a href="1-hello-world.html">
+            
+                    
+                    1. Hello World
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="2-service.html">
+            
+                <a href="2-service.html">
+            
+                    
+                    2. 编写 Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="3-action.html">
+            
+                <a href="3-action.html">
+            
+                    
+                    3. Action与路由
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../advanced/readme.md">
+            
+                <span>
+            
+                    
+                    高级主题
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../advanced/debug.html">
+            
+                <a href="../advanced/debug.html">
+            
+                    
+                    框架 Debug
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../advanced/life-cycle.html">
+            
+                <a href="../advanced/life-cycle.html">
+            
+                    
+                    生命周期概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../api/readme.md">
+            
+                <span>
+            
+                    
+                    API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../api/action.html">
+            
+                <a href="../api/action.html">
+            
+                    
+                    Action
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../api/cache.html">
+            
+                <a href="../api/cache.html">
+            
+                    
+                    Cache
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../api/cache-namespace.html">
+            
+                <a href="../api/cache-namespace.html">
+            
+                    
+                    Cache Namespace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../api/emitter.html">
+            
+                <a href="../api/emitter.html">
+            
+                    
+                    Emitter
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../api/http.html">
+            
+                <a href="../api/http.html">
+            
+                    
+                    Http
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../api/promise.html">
+            
+                <a href="../api/promise.html">
+            
+                    
+                    Promise
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../api/resource.html">
+            
+                <a href="../api/resource.html">
+            
+                    
+                    Resource
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../api/router.html">
+            
+                <a href="../api/router.html">
+            
+                    
+                    Router
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../api/service.html">
+            
+                <a href="../api/service.html">
+            
+                    
+                    Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../api/underscore.html">
+            
+                <a href="../api/underscore.html">
+            
+                    
+                    Underscore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.11" data-path="../api/url.html">
+            
+                <a href="../api/url.html">
+            
+                    
+                    Url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.12" data-path="../api/view.html">
+            
+                <a href="../api/view.html">
+            
+                    
+                    View
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <a target="_blank" href="https://github.com/searchfe/superframe/releases">
+            
+                    
+                    版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >3. Action与路由</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="3-action-&#x8DEF;&#x7531;">3. Action &#x8DEF;&#x7531;</h1>
+<p>&#x5728;superframe&#x4E2D;Action&#x7528;&#x6765;&#x6CE8;&#x518C;&#x4E0E;&#x5207;&#x6362;Service&#x3002;
+&#x76F8;&#x5173;&#x7684;&#x8DEF;&#x7531;&#x4FE1;&#x606F;&#x4F1A;&#x4F20;&#x9012;&#x5230;service&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x65B9;&#x6CD5;&#x4E2D;&#x3002;</p>
+<h2 id="url&#x5339;&#x914D;&#x89C4;&#x5219;">URL&#x5339;&#x914D;&#x89C4;&#x5219;</h2>
+<p>Action&#x652F;&#x6301;&#x6CE8;&#x518C;&#x591A;&#x79CD;&#x683C;&#x5F0F;&#x7684;URL Pattern&#xFF1A;&#x5B57;&#x7B26;&#x4E32;&#x3001;RESTful&#x5B57;&#x7B26;&#x4E32;&#x3001;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x3002;
+&#x5B83;&#x4EEC;&#x7684;&#x5339;&#x914D;&#x89C4;&#x5219;&#x5206;&#x522B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<h3 id="&#x5B57;&#x7B26;&#x4E32;">&#x5B57;&#x7B26;&#x4E32;</h3>
+<p>&#x5B57;&#x7B26;&#x4E32;&#x5168;&#x5339;&#x914D;URL&#x4E2D;&#x7684;path&#x90E8;&#x5206;&#xFF0C;&#x57FA;&#x4E8E;<a href="1-hello-world.html">&#x542F;&#x52A8;Action&#x65F6;&#x7684;<code>root</code>&#x914D;&#x7F6E;</a>&#x3002;</p>
+<p>&#x4F8B;&#x5982;&#x5BF9;&#x4E8E;&#x4E0B;&#x5217;root&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-javascript">sfr.action.start({
+    root: <span class="hljs-string">&apos;/root&apos;</span>
+});
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>URL Pattern</th>
+<th>&#x5339;&#x914D;&#x7684;URL</th>
+<th>&#x4E0D;&#x5339;&#x914D;&#x7684;URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/foo</code></td>
+<td><code>/root/foo</code>, <code>/root/foo?author=harttle</code></td>
+<td><code>/root/foo/bar</code></td>
+</tr>
+<tr>
+<td><code>/foo/bar</code></td>
+<td><code>/root/foo/bar</code>, <code>/root/foo/bar?date=20161118</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="restful&#x5B57;&#x7B26;&#x4E32;">RESTful&#x5B57;&#x7B26;&#x4E32;</h3>
+<p>&#x4F7F;&#x7528;RESTful&#x98CE;&#x683C;&#x5339;&#x914D;path&#x90E8;&#x5206;&#x3002;&#x4EE5;<code>root: &apos;/root&apos;</code>&#x914D;&#x7F6E;&#x4E3A;&#x4F8B;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>URL Pattern</th>
+<th>&#x5339;&#x914D;&#x7684;URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/person/:id</code></td>
+<td><code>/root/person/32</code>, <code>/root/person/harttle</code></td>
+</tr>
+<tr>
+<td><code>/person/:id/code/:cid</code></td>
+<td><code>/root/person/harttle/code/2333</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;">&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;</h3>
+<p>&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x8868;&#x8FBE;&#x5F0F;&#x5339;&#x914D;path&#x90E8;&#x5206;&#x3002;</p>
+<table>
+<thead>
+<tr>
+<th>URL Pattern</th>
+<th>&#x5339;&#x914D;&#x7684;URL</th>
+<th>&#x4E0D;&#x5339;&#x914D;&#x7684;URL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/person/(\d+)</code></td>
+<td><code>/root/person/32</code></td>
+<td><code>/root/person/harttle</code></td>
+</tr>
+<tr>
+<td><code>/person/(\w+)/code/(\d+)</code></td>
+<td><code>/root/person/harttle/code/2333</code></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="&#x6CE8;&#x518C;&#x4E0E;&#x8DF3;&#x8F6C;">&#x6CE8;&#x518C;&#x4E0E;&#x8DF3;&#x8F6C;</h2>
+<p>&#x4E3A;&#x4E86;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5B9E;&#x9A8C;&#xFF0C;&#x6211;&#x4EEC;&#x57FA;&#x4E8E;<a href="2-service.html">&#x7F16;&#x5199; Service</a>&#x4E00;&#x8282;&#x4E2D;&#x7684;
+<code>index</code> service
+&#x6765;&#x914D;&#x7F6E;&#x4E00;&#x4E9B;URL&#x5165;&#x53E3;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#x5B57;&#x7B26;&#x4E32;&#x683C;&#x5F0F;</span>
+sfr.action.regist(<span class="hljs-string">&apos;/&apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;index&apos;</span>));
+<span class="hljs-comment">// RESTful</span>
+sfr.action.regist(<span class="hljs-string">&apos;/todos/:id&apos;</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;todo&apos;</span>));
+<span class="hljs-comment">// RegExp</span>
+sfr.action.regist(<span class="hljs-regexp">/\/lists\/(\d+)/</span>, <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;list&apos;</span>));
+</code></pre>
+<p>&#x5728;<code>index</code>service&#x6E32;&#x67D3;&#x7684;&#x9875;&#x9762;&#x4E2D;&#x6DFB;&#x52A0;&#x5982;&#x4E0B;&#x94FE;&#x63A5;&#xFF1A;</p>
+<pre><code class="lang-javascript">&lt;li&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">data-sf-href</span>=<span class="hljs-string">&quot;/todos/527&quot;</span>&gt;</span>Todo 527<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+&lt;li&gt;<span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">data-sf-href</span>=<span class="hljs-string">&quot;/lists/238&quot;</span>&gt;</span>List 238<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span></span>
+</code></pre>
+<p><code>index</code>service&#x6E32;&#x67D3;&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="../img/get-started/action-index.png" alt=""></p>
+<h2 id="todo-service-restful&#x8DEF;&#x7531;">Todo Service: RESTful&#x8DEF;&#x7531;</h2>
+<p>&#x5728;<code>todo</code>Service&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x56DE;&#x8C03;&#x4E2D;&#x53EF;&#x4EE5;&#x5F97;&#x5230;RESTful URL&#x5339;&#x914D;&#x7684;&#x8DEF;&#x7531;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">define([<span class="hljs-string">&apos;sfr&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> sfr = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sfr&apos;</span>);
+    <span class="hljs-keyword">var</span> todoService = <span class="hljs-keyword">new</span> sfr.service();
+
+    todoService.create = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">options</span>) </span>{
+        <span class="hljs-keyword">this</span>.el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+        <span class="hljs-keyword">this</span>.el.innerHTML = 
+            <span class="hljs-string">&apos;&lt;p&gt;This is Todo &apos;</span> + options.params.id + <span class="hljs-string">&apos;!&lt;/p&gt;&apos;</span> +
+            <span class="hljs-string">&apos;&lt;p&gt;Current Path:&apos;</span> + options.path + <span class="hljs-string">&apos;&lt;/p&gt;&apos;</span> +
+            <span class="hljs-string">&apos;&lt;p&gt;Current URL:&apos;</span> + options.url + <span class="hljs-string">&apos;&lt;/p&gt;&apos;</span>;
+        sfr.doc.appendChild(<span class="hljs-keyword">this</span>.el);
+    };
+
+    todoService.destroy = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>.el.remove();
+    };
+
+    <span class="hljs-keyword">return</span> todoService;
+});
+</code></pre>
+<p><code>options.params.id</code>&#x5373;&#x4E3A;&#x6CE8;&#x518C;&#x7684;URL Pattern <code>&apos;/todos/:id&apos;</code> &#x7684;&#x5339;&#x914D;&#x7ED3;&#x679C;&#x3002;</p>
+<p><img src="../img/get-started/action-rest.png" alt=""></p>
+<h2 id="list-service-regexp&#x8DEF;&#x7531;">List Service: RegExp&#x8DEF;&#x7531;</h2>
+<p>&#x5728;<code>list</code>Service&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#x4E2D;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x6B63;&#x5219;&#x5339;&#x914D;&#x5F97;&#x5230;&#x7684;&#x8DEF;&#x7531;&#x53C2;&#x6570;&#x3002;</p>
+<pre><code class="lang-javascript">define([<span class="hljs-string">&apos;sfr&apos;</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> sfr = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;sfr&apos;</span>);
+    <span class="hljs-keyword">var</span> todoService = <span class="hljs-keyword">new</span> sfr.service();
+
+    todoService.create = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">options</span>) </span>{
+        <span class="hljs-keyword">this</span>.el = <span class="hljs-built_in">document</span>.createElement(<span class="hljs-string">&apos;div&apos;</span>);
+        <span class="hljs-keyword">this</span>.el.innerHTML = 
+            <span class="hljs-string">&apos;&lt;p&gt;This is List &apos;</span> + options.params.$<span class="hljs-number">1</span> + <span class="hljs-string">&apos;!&lt;/p&gt;&apos;</span> +
+            <span class="hljs-string">&apos;&lt;p&gt;Current Path:&apos;</span> + options.path + <span class="hljs-string">&apos;&lt;/p&gt;&apos;</span> +
+            <span class="hljs-string">&apos;&lt;p&gt;Current URL:&apos;</span> + options.url + <span class="hljs-string">&apos;&lt;/p&gt;&apos;</span>;
+        sfr.doc.appendChild(<span class="hljs-keyword">this</span>.el);
+    };
+
+    todoService.destroy = <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">this</span>.el.remove();
+    };
+
+    <span class="hljs-keyword">return</span> todoService;
+});
+</code></pre>
+<p><code>options.params.$1</code>&#x5373;&#x4E3A;&#x6CE8;&#x518C;&#x7684;URL Pattern <code>/\/lists\/(\d+)/</code> &#x7684;&#x5339;&#x914D;&#x7ED3;&#x679C;&#x3002;&#x5982;&#x679C;&#x6709;&#x7B2C;&#x4E8C;&#x4E2A;<strong>&#x6B63;&#x5219;&#x83B7;&#x53D6;&#x7EC4;(capturing group)</strong>&#x5219;&#x4F4D;&#x4E8E;<code>$2</code>&#x4E0B;&#xFF0C;&#x4EE5;&#x6B64;&#x7C7B;&#x63A8;&#x3002;</p>
+<p><img src="../img/get-started/action-regexp.png" alt=""></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2-service.html" class="navigation navigation-prev " aria-label="Previous page: 2. 编写 Service">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../advanced/readme.md" class="navigation navigation-next " aria-label="Next page: 高级主题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"3. Action与路由","level":"1.2.3","depth":2,"next":{"title":"高级主题","level":"1.3","depth":1,"path":"advanced/readme.md","ref":"advanced/readme.md","articles":[{"title":"框架 Debug","level":"1.3.1","depth":2,"path":"advanced/debug.md","ref":"advanced/debug.md","articles":[]},{"title":"生命周期概述","level":"1.3.2","depth":2,"path":"advanced/life-cycle.md","ref":"advanced/life-cycle.md","articles":[]}]},"previous":{"title":"2. 编写 Service","level":"1.2.2","depth":2,"path":"get-started/2-service.md","ref":"get-started/2-service.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"get-started/3-action.md","mtime":"2017-07-26T06:51:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-08-04T03:19:00.477Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
